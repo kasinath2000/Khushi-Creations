@@ -3,7 +3,8 @@ import { Link } from "react-scroll"; // Import Link from react-scroll
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { NavLink } from "react-router-dom"; 
-
+import { Fab } from "@mui/material"; // Import Fab from MUI
+import LinkIcon from "@mui/icons-material/Link"; // Use the link icon or any other icon
 const Navbar = ({ logo, navItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,6 +13,7 @@ const Navbar = ({ logo, navItems }) => {
   };
 
   return (
+   
     <nav className="sticky top-0 z-50 bg-[#a4cf5a] shadow-md text-gray-700">
       <div className="container mx-auto  py-3 flex justify-around items-center">
         {/* Logo */}
@@ -68,6 +70,7 @@ const Navbar = ({ logo, navItems }) => {
         </ul>
       )}
     </nav>
+    
   );
 };
 

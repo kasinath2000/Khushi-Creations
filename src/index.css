@@ -30,3 +30,18 @@ body {
     max-height: 500px; /* Or any specific height for the scrollable area */
   }
   
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+body {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Change the color of the selected text */
+::selection {
+  background-color: #85FFBD;  /* Background color on text selection */
+  color: #FF5733;             /* Text color on selection */
+}

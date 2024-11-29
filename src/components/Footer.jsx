@@ -5,7 +5,7 @@ import logo from '../assets/image/logo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-teal-700 text-white py-8">
+    <footer className="bg-teal-700 text-white py-6 ">
       <div className="container mx-auto px-4 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Side: Logo */}
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* Developer Info */}
-        <div className="mt-8 border-t border-teal-500 pt-4">
+        <div className="mt-8 border-t border-teal-500 pt-2">
           <p className="text-sm text-center">
             &copy; {new Date().getFullYear()} Khushi Creations. All Rights Reserved.
           </p>

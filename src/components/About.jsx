@@ -11,7 +11,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 py-16 ">
+    <section id='about' className="container mx-auto px-4 py-16 ">
       {/* Heading and Subheading */}
       <div className="text-center space-y-4 mb-12">
         <h1 className="text-3xl font-bold text-teal-600">About Artist</h1>

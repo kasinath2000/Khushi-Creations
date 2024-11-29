@@ -1,46 +1,13 @@
-import React, { useState } from "react";
+import React from 'react';
+import { Facebook, Instagram } from '@mui/icons-material'; // Import MUI icons
 
-const Contact = () => {
-  // State for form input values
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  // State for form submission status
-  const [status, setStatus] = useState("");
-
-  // Handle form input change
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Simulate form submission (you can integrate with an actual API later)
-    setStatus("Thank you for reaching out! We will get back to you shortly.");
-    
-    // Clear the form fields
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
-
+const ContactSection = () => {
   return (
-    <section id="contact" className="container mx-auto px-4 py-16 ">
+    <section id='contact' className="container mx-auto px-4 py-16 ">
       {/* Heading */}
       <div className="text-center space-y-4 mb-12">
-        <h1 className="text-3xl font-bold text-teal-600">Contact Us</h1>
-        <p className="text-lg text-gray-700">
+        <h1 className="text-4xl font-bold text-teal-600">Contact Us</h1>
+        <p className="text-xl text-gray-700">
           Have any questions or inquiries? Feel free to get in touch.
         </p>
       </div>
@@ -58,75 +25,28 @@ const Contact = () => {
           <p className="text-lg text-gray-700">
             <strong>Address:</strong> 123 Mehendi Street, Art City, Country
           </p>
+          
+          {/* Social Media Icons */}
           <div className="space-x-4 mt-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600">
-              Facebook
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600 text-3xl">
+              <Facebook fontSize="inherit" /> {/* MUI Facebook Icon */}
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600">
-              Instagram
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600">
-              Twitter
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600 text-3xl">
+              <Instagram fontSize="inherit" /> {/* MUI Instagram Icon */}
             </a>
           </div>
         </div>
 
-        {/* Right Side: Contact Form */}
+        {/* Right Side: Contact Message */}
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-semibold text-teal-600 text-center md:text-left">Send Us a Message</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-lg text-gray-700">Your Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-lg text-gray-700">Your Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-lg text-gray-700">Your Message</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-                rows="6"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
-            >
-              Send Message
-            </button>
-          </form>
-
-          {status && <p className="mt-4 text-center text-green-600">{status}</p>}
+          <h2 className="text-2xl font-semibold text-teal-600 text-center md:text-left">Get in Touch</h2>
+          <p className="text-lg text-gray-700 mt-4">
+            If you have any questions or would like to book a mehndi session, feel free to reach out to us via the contact details above. We will get back to you as soon as possible!
+          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default ContactSection;
