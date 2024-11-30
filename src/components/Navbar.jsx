@@ -53,14 +53,14 @@ const Navbar = ({ logo, navItems }) => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden bg-white shadow-md space-y-4 p-4">
+        <ul className="md:hidden bg-[#b6fda3] shadow-md space-y-4 p-4 flex flex-col items-center">
           {navItems.map((item, index) => (
             <li key={index}>
               <Link
                 to={item.id} // Match the ID of the section
                 smooth={true}
                 duration={500}
-                className="block cursor-pointer text-gray-700 hover:text-teal-600 transition duration-300"
+                className="block cursor-pointer text-gray-700 hover:text-teal-600 transition duration-300 "
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
                 {item.label}

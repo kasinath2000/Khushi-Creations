@@ -35,7 +35,7 @@ const GallerySection = () => {
           onClick={handleViewAll}
           sx={{ backgroundColor: '#14b8a6', '&:hover': { backgroundColor: '#0d9488' } }}
         >
-          {showAll ? 'Show Less' : 'View All Designs'}
+          {showAll ? 'Show Less' : 'View All ..'}
         </Button>
       </div>
     </section>

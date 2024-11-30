@@ -1,9 +1,18 @@
 import React from 'react';
 import { Facebook, Instagram } from '@mui/icons-material'; // Import MUI icons
+import { Link } from 'react-router-dom'; // Import Link for client-side routing
 
 const ContactSection = () => {
+  const contactInfo = {
+    email: 'artistemail@example.com',
+    phone: '+91 9732 2034057',
+    address: 'Ranibandh, Bankura, WB, 722148',
+    socialLinks: {
+      facebook: 'https://www.facebook.com/profile.php?id=100086646060216',
+      instagram: 'https://www.instagram.com/art_by_khushi.m?igsh=YTV2Z2xmMGdldW1u',
+    }}
   return (
-    <section id='contact' className="container mx-auto px-4 py-16 ">
+    <section id="contact" className="container mx-auto px-4 py-16">
       {/* Heading */}
       <div className="text-center space-y-4 mb-12">
         <h1 className="text-4xl font-bold text-teal-600">Contact Us</h1>
@@ -17,23 +26,37 @@ const ContactSection = () => {
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <h2 className="text-2xl font-semibold text-teal-600">Contact Information</h2>
           <p className="text-lg text-gray-700">
-            <strong>Email:</strong> artistemail@example.com
+            <strong>Email:</strong> {contactInfo.email}
           </p>
           <p className="text-lg text-gray-700">
-            <strong>Phone:</strong> +123 456 7890
+            <strong>Phone:</strong> {contactInfo.phone}
           </p>
           <p className="text-lg text-gray-700">
-            <strong>Address:</strong> 123 Mehendi Street, Art City, Country
+            <strong>Address:</strong> {contactInfo.address}
           </p>
           
           {/* Social Media Icons */}
           <div className="space-x-4 mt-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600 text-3xl">
-              <Facebook fontSize="inherit" /> {/* MUI Facebook Icon */}
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-teal-600 text-3xl">
-              <Instagram fontSize="inherit" /> {/* MUI Instagram Icon */}
-            </a>
+            {contactInfo.socialLinks.facebook && (
+              <Link
+                to={contactInfo.socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-teal-600 text-3xl"
+              >
+                <Facebook fontSize="inherit" />
+              </Link>
+            )}
+            {contactInfo.socialLinks.instagram && (
+              <Link
+                to={contactInfo.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-teal-600 text-3xl"
+              >
+                <Instagram fontSize="inherit" />
+              </Link>
+            )}
           </div>
         </div>
 

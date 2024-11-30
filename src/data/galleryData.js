@@ -1,37 +1,42 @@
+import imgcard from '../assets/image/img1.jpg'
+import imgcard2 from '../assets/image/img2.jpg'
+import imgcard3 from '../assets/image/img3.jpg'
+import imgcard4 from '../assets/image/img4.jpg'
+import imgcard5 from '../assets/image/img5.jpg'
 const galleryData = [
     {
       id: 1,
       title: "Elegant Bridal Design",
       description: "Perfect for weddings, showcasing intricate details.",
-      imageSrc: "https://img.freepik.com/premium-vector/vector-illustration-traditional-indian-henna-mehndi-floral-ornament-design_765687-63.jpg?w=740"||"https://via.placeholder.com/400",
+      imageSrc: imgcard,
       imageAlt: "Elegant Bridal Mehendi Design",
     },
     {
       id: 2,
       title: "Traditional Mehendi",
       description: "Features classic patterns with a modern twist.",
-      imageSrc: "https://img.freepik.com/premium-vector/vector-illustration-traditional-indian-henna-mehndi-floral-ornament-design_765687-63.jpg?w=740"||"https://via.placeholder.com/400",
+      imageSrc: imgcard2,
       imageAlt: "Traditional Mehendi Design",
     },
     {
       id: 3,
       title: "Floral Bliss",
       description: "A beautiful floral design for festive occasions.",
-      imageSrc: "https://img.freepik.com/premium-vector/vector-illustration-traditional-indian-henna-mehndi-floral-ornament-design_765687-63.jpg?w=740"||"https://via.placeholder.com/400",
+      imageSrc: imgcard3,
       imageAlt: "Floral Mehendi Design",
     },
     {
       id: 4,
       title: "Minimalistic Art",
       description: "Perfect for casual events and simple looks.",
-      imageSrc: "https://img.freepik.com/premium-vector/vector-illustration-traditional-indian-henna-mehndi-floral-ornament-design_765687-63.jpg?w=740"||"https://via.placeholder.com/400",
+      imageSrc: imgcard4,
       imageAlt: "Minimalistic Mehendi Design",
     },
     {
       id: 5,
       title: "Royal Bridal Mehendi",
       description: "A regal design with heavy and intricate patterns.",
-      imageSrc: "https://img.freepik.com/premium-vector/vector-illustration-traditional-indian-henna-mehndi-floral-ornament-design_765687-63.jpg?w=740"||"https://via.placeholder.com/400",
+      imageSrc: imgcard5,
       imageAlt: "Royal Bridal Mehendi Design",
     },
     {

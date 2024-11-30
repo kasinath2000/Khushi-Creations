@@ -6,7 +6,7 @@ const AboutSection = () => {
     name: "Priyanka Mandal",
     profession: "Mehendi Artist",
     bio: "I am a passionate Mehendi artist specializing in intricate and traditional designs. I create unique, personalized Mehendi art that reflects your special moments. Whether it's for a wedding, festival, or any other occasion, I ensure every design is perfect and filled with creativity.",
-    imageSrc: "https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?t=st=1732912492~exp=1732916092~hmac=9c84a61de1065a46493aa8858f2cbce1ee4e7db3cb86ef56d8c6c3a239cd3eab&w=740"||"https://via.placeholder.com/500", // Replace with the actual artist's image URL
+    imageSrc: "https://scontent.fdbd3-1.fna.fbcdn.net/v/t39.30808-6/454425323_464883833076482_7063378598222495_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=g5vJSCgHKUcQ7kNvgG5RmCm&_nc_zt=23&_nc_ht=scontent.fdbd3-1.fna&_nc_gid=AwaqvSO5WVwcpmM3E_l5JHq&oh=00_AYAAkyoKyfYeILaJh_tD84Pzd-VsayoUFJedQJFj7FI30w&oe=6750DE2B" ||"https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?t=st=1732912492~exp=1732916092~hmac=9c84a61de1065a46493aa8858f2cbce1ee4e7db3cb86ef56d8c6c3a239cd3eab&w=740"||"https://via.placeholder.com/500", // Replace with the actual artist's image URL
     imageAlt: "Artist Profile Picture",
   };
 
