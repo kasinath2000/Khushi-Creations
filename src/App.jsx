@@ -1,12 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import HomeSection from "./components/HomeSection";
-import GallerySection  from "./components/GallerySection";
-import About  from "./components/About";
-import Contact  from "./components/Contact";
-import Footer  from "./components/Footer";
-import GalleryPage  from "./components/GalleryPage";
+import { About, Contact, Footer, GalleryPage, GallerySection, HomeSection, Navbar } from './components';
 import { logo, navItems } from "./data/data";
 
 
